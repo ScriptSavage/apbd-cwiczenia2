@@ -18,14 +18,14 @@ static double GetAvarage(int[]tab)
 {
     double sredia = 0;
 
-    double suma = 0;
+    double zmianaNazwyZmiennej = 0;
     
     for (int i = 0; i < tab.Length; i++)
     {
-        suma += tab[i];
+        zmianaNazwyZmiennej += tab[i];
     }
 
-    sredia = suma / tab.Length;
+    sredia = zmianaNazwyZmiennej / tab.Length;
 
     return sredia;
 }
