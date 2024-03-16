@@ -1,38 +1,23 @@
 ﻿
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
+int []arr = {1,2,3, 4, 5, 4, 3, 54, 65, 6, 7, 5, 5, -1, 0 };
 
-
-Console.WriteLine("Zmiana 1");
-
-
-
-static double GetAvarage(int[]tab)
+static int maxValue(int[]tab)
 {
-    double sredia = 0;
 
-    double suma = 0;
+    int max = tab[0];
     
     for (int i = 0; i < tab.Length; i++)
     {
-        suma += tab[i];
+        if (tab[i] > max)
+        {
+            max = tab[i];
+        }
     }
 
-    sredia = suma / tab.Length;
-
-    return sredia;
+    return max;
 }
 
-int[] arr = new int[] { 1,2,3,4};
 
 
-Console.WriteLine(GetAvarage(arr));
+Console.WriteLine(maxValue(arr));
